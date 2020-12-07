@@ -6,7 +6,7 @@ name: 企鹅读书
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/7 1-23 * * *'
+     - cron: '*/11 1-23 * * *'
   watch:
     types: started
 
@@ -46,5 +46,3 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-
-    
